@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from array import array
 import cv2
 import mediapipe as mp
