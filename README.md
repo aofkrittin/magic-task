@@ -5,7 +5,7 @@
 
 **Assumptions**
 - The camera spec is outputting 25 frames per second, as indicated in the video file.
-- The variables min_threshold and max_threshold are assumed to be 35 and 55 respectively. This comes from a pure observation from the result produced by using the video A.mp4
+- The variables min_threshold and max_threshold are assumed to be 35 and 55 respectively. This comes from a pure observation from the result produced by using the video A.mp4.
 
 **Reasoning**
 - In this work, we use MediaPipe to determine the keypoint on a body, such as a shoulder, an elbow, a wrist, or a face, etc in order to count the number of waving motion a user is producing. 
@@ -14,3 +14,5 @@
 - Applying MediaPipe solution, we can determine the positions of the keypoints and compute the two vectors. Then, we can use dot product to compute the angle between the two vectors.
 
 **Extension**
+- The work can be extended to apply to various exercise movements, if the keypoints of which are important to the movement, are indicated. For example, a  push up movement can be viewed as an angle between the same two vectors and also how the lines connecting from the feet to shoulders are.
+- Furthermore, as every user will have different body types, a specific exercise motion as detected by MediaPipe cannot be achieved in the same way as the other users'. To make the program more generalisable, some certain machine learning technique such as neural network can be applied to learn the proper way of exercising for different body types (which will require a lot of parameters).
