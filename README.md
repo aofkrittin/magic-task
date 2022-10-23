@@ -18,7 +18,7 @@
 **Reasoning**
 - In this work, we use MediaPipe to determine the keypoint on a body, such as a shoulder, an elbow, a wrist, or a face, etc in order to count the number of waving motion a user is producing. 
 - The waving motion is created by making an arcing motion with the arm, using the elbow as the pivotal joint and repeating the same motion in the opposite direction. 
-- One complete motion is a downward arcing motion until the certain point and followed by an upward arcing motion, or vice versa. The motion can therefore be viewed as the amount of angle between two vectors, from the elbow to the wrist, and from the elbow to the shoulder, i.e. when the arm is moving up, the angle will be decreasing and finally reach the minimum threshold angle (counted as 50% completion), and when it is moving down, the angle will increase and arrive at the maximum threshold angle (counted as 100% completion). This process can be reversed, when the starting angle is the opposite.
+- One complete motion is a downward arcing motion until the certain point and followed by an upward arcing motion, or vice versa. The motion can therefore be viewed as the amount of angle between two vectors, from the elbow to the wrist, and from the elbow to the shoulder, i.e. when the arm is moving up, the angle will be decreasing and finally reach the minimum threshold angle, and when it is moving down, the angle will increase and arrive at the maximum threshold angle. This process can be reversed, when the starting angle is the opposite.
 - Applying MediaPipe solution, we can determine the positions of the keypoints and compute the two vectors. Then, we can use dot product to compute the angle between the two vectors.
 
 **Possible extension**
