@@ -1,3 +1,11 @@
+**File description**
+- A.mp4: Video of a person waving 5 times at a fairly consistent speed, to be converted into Pose estimation data and used as the basis of a waving pattern
+- B.mp4: Video of a person waving 10 times at inconsistent speeds, to be analysed and fed into an algorithm that counts the number of waves in real-time
+- magic.py: Code containing the class for running the solution for task A and B.
+- B.py: Code for running the task B.
+- requirements.txt: Necessary python packages for running the task.
+- Magic_Tech__CV_ML_Engineer_Test.pdf: Instruction for the take-home task.
+
 **Instruction**
 - The file "magic.py" contains the class for running the solution for task A and B.
 - If you run "magic.py", the IDE will assume that you are using "A.mp4" as an input.
