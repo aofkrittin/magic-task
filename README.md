@@ -13,6 +13,6 @@
 - One complete motion is a downward arcing motion until the certain point and followed by an upward arcing motion, or vice versa. The motion can therefore be viewed as the amount of angle between two vectors, from the elbow to the wrist, and from the elbow to the shoulder, i.e. when the arm is moving up, the angle will be decreasing and finally reach the minimum threshold angle (counted as 50% completion), and when it is moving down, the angle will increase and arrive at the maximum threshold angle (counted as 100% completion). This process can be reversed, when the starting angle is the opposite.
 - Applying MediaPipe solution, we can determine the positions of the keypoints and compute the two vectors. Then, we can use dot product to compute the angle between the two vectors.
 
-**Extension**
+**Possible extension**
 - The work can be extended to apply to various exercise movements, if the keypoints of which are important to the movement, are indicated. For example, a  push up movement can be viewed as an angle between the same two vectors and also how the lines connecting from the feet to shoulders are.
 - Furthermore, as every user will have different body types, a specific exercise motion as detected by MediaPipe cannot be achieved in the same way as the other users'. To make the program more generalisable, some certain machine learning technique such as neural network can be applied to learn the proper way of exercising for different body types (which will require a lot of parameters).
